@@ -4,8 +4,10 @@ import com.example.demo_employee.models.constants.RoleName;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.Set;
+
 @Entity
-@Table(name = "user")
+@Table(name = "users")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -28,4 +30,6 @@ public class User {
 
     @Column(nullable = true)
     private boolean enabled;
+
+
 }

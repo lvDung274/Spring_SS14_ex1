@@ -20,7 +20,7 @@ public class MyUserDetailsService implements UserDetailsService {
                 .orElseThrow(() -> new UsernameNotFoundException("User not found with username: " + username));
 
 
-        MyUserDetails userDetails = MyUserDetails.builder().build();
+        MyUserDetails userDetails = MyUserDetails.build(user);
         return userDetails ;
     }
 }
