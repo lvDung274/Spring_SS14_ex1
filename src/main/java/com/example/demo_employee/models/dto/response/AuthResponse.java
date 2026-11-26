@@ -4,8 +4,10 @@ import java.util.Set;
 
 public record AuthResponse(
         Long id,
+        String token,
+        String type,
         String fullName,
-        String userName
-
+        String userName,
+        Set<String> roles
 ) {
 }
